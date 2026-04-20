@@ -1,2 +1,2 @@
 # E.D.E.N
-Experience driven Entertainment Navigator
+Experience Driven Entertainment Navigator
