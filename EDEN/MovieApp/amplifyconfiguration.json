@@ -1,0 +1,73 @@
+{
+    "UserAgent": "aws-amplify-cli/2.0",
+    "Version": "1.0",
+    "api": {
+        "plugins": {
+            "awsAPIPlugin": {
+                "eden": {
+                    "endpointType": "GraphQL",
+                    "endpoint": "https://bqqbkp3gjvenhej57na2n3ur34.appsync-api.ap-southeast-2.amazonaws.com/graphql",
+                    "region": "ap-southeast-2",
+                    "authorizationType": "API_KEY",
+                    "apiKey": "da2-k7pol64c3fhnlg7nmi2fkefstq"
+                }
+            }
+        }
+    },
+    "auth": {
+        "plugins": {
+            "awsCognitoAuthPlugin": {
+                "UserAgent": "aws-amplify/cli",
+                "Version": "0.1.0",
+                "IdentityManager": {
+                    "Default": {}
+                },
+                "CredentialsProvider": {
+                    "CognitoIdentity": {
+                        "Default": {
+                            "PoolId": "ap-southeast-2:42548f61-7466-4168-b306-02cfec68559b",
+                            "Region": "ap-southeast-2"
+                        }
+                    }
+                },
+                "CognitoUserPool": {
+                    "Default": {
+                        "PoolId": "ap-southeast-2_Gh0JIL5G7",
+                        "AppClientId": "3qsc16u0b915882t3vc8364m4l",
+                        "Region": "ap-southeast-2"
+                    }
+                },
+                "Auth": {
+                    "Default": {
+                        "authenticationFlowType": "USER_SRP_AUTH",
+                        "socialProviders": [],
+                        "usernameAttributes": [],
+                        "signupAttributes": [
+                            "EMAIL"
+                        ],
+                        "passwordProtectionSettings": {
+                            "passwordPolicyMinLength": 8,
+                            "passwordPolicyCharacters": []
+                        },
+                        "mfaConfiguration": "OFF",
+                        "mfaTypes": [
+                            "SMS"
+                        ],
+                        "verificationMechanisms": [
+                            "EMAIL"
+                        ]
+                    }
+                },
+                "AppSync": {
+                    "Default": {
+                        "ApiUrl": "https://bqqbkp3gjvenhej57na2n3ur34.appsync-api.ap-southeast-2.amazonaws.com/graphql",
+                        "Region": "ap-southeast-2",
+                        "AuthMode": "API_KEY",
+                        "ApiKey": "da2-k7pol64c3fhnlg7nmi2fkefstq",
+                        "ClientDatabasePrefix": "eden_API_KEY"
+                    }
+                }
+            }
+        }
+    }
+}
